@@ -83,6 +83,7 @@ input{
     background-color: #000430;
     border: 1px solid white;
     outline: none;
+    margin-left: 30px;
 }
 button{
     width: 50px;
@@ -98,3 +99,77 @@ button{
     outline: none;
      border: 1px solid  #454bb5;
 }
+@media screen and (min-width: 768px){
+    .container{
+ max-width: 700px;
+ margin: 120px auto 0 auto; 
+}
+.details h1{
+    font-size: 60px;
+ 
+}
+.details p{
+     font-size: 30px;
+}
+#number {
+     width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+      background-color: #454bb5;
+}
+form{
+    margin-top: 100px;
+    width: 98%;
+    gap: 30px;
+}
+input{
+    margin-left: 49px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+}
+ @media screen and (min-width: 992px){
+      .container{
+ max-width: 1200px;
+ margin: 100px auto 0 auto; 
+}
+.details h1{
+    font-size: 80px;
+ 
+}
+.details p{
+     font-size: 40px;
+}
+form{
+    margin-top: 100px;
+    width: 78%;
+    gap: 20px;
+    height: 80px;
+}
+input{
+    margin-left: 249px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+button{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+ }
