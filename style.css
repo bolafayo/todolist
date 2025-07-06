@@ -42,7 +42,7 @@ body{
      margin-right: 40px;
      font-size: 20px;
 }
-#bar{
+#progressBar{
     width: 100%;
     height: 10px;
     border-radius: 5px;
@@ -50,11 +50,13 @@ body{
     background-color:  #171c84;
    
 }
-#proress{
-    width: 80%;
+#progress{
+    width: 0%;
     height: 10px;
    background-color: aqua;
+   border-radius: 10px;
     transition: all 0.3s ease;
+  
 
 }
 #number {
@@ -84,6 +86,8 @@ input{
     border: 1px solid white;
     outline: none;
     margin-left: 30px;
+    color: white;
+    font-size: 18px;
 }
 button{
     width: 50px;
@@ -98,6 +102,43 @@ button{
     color: white;
     outline: none;
      border: 1px solid  #454bb5;
+}
+#task-list{
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+width: 100%;
+list-style: none;
+}
+.task-Item{
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex; 
+  background-color: #0d1042;
+   color: white;
+    padding: 10px;
+    align-items: center;
+
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap:10px ;
+    
+}
+.task input{
+    width: 20px;
+    height: 20px;
+}
+.task-Item img{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.task.completed{
+    text-decoration: line-through;
+    color: aqua;
 }
 @media screen and (min-width: 768px){
     .container{
@@ -128,15 +169,29 @@ input{
     margin-left: 49px;
     border-radius: 10px;
     padding: 30px;
-    font-size: 25px;
+    font-size: 30px;
 }
 button{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 
+}
+#task-list{
+gap: 15px;
+margin-top: 30px;
+width: 100%;
+list-style: none;
+font-size: 20px;
+
+}
+.task-Item{
+   
+   margin-left: 50px;
+    width: 80%;
+    padding: 20px;
 }
 
 }
@@ -165,11 +220,30 @@ input{
     font-size: 20px;
 }
 button{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     font-size: 45px;
     font-weight: bold;
+}
+#task-list{
+gap: 15px;
+margin-top: 60px;
+width: 100%;
+list-style: none;
+font-size: 20px;
+
+}
+.task-Item{
+    margin-top: 10px;
+       width: 70%;
+    padding: 20px;
+    margin-left: 150px;
+}
+.task input{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
 }
 
  }
