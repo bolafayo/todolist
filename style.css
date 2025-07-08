@@ -277,9 +277,27 @@ font-size: 20px;
     margin-left: 150px;
 }
 .task input{
-    width: 20px;
+    width: 100%;
     height: 20px;
     margin-left: 30px;
 }
+.filter-buttons {
+        margin: 25px;
+       
+    }
+ .filter-buttons button {
+        margin-top: 20px;
+        width: 150px;
+    }
+    #showBtn{
+        font-size: 16px;
+       
+    }
+    #showActiveBtn{
+        font-size: 16px;
+    }
+    #showCompletedBtn{
+        font-size: 16px;
+    }
 
  }
