@@ -140,6 +140,42 @@ list-style: none;
     text-decoration: line-through;
     color: aqua;
 }
+    .filter-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        text-align: center;
+        margin: 10px;
+       
+    }
+    .filter-buttons button {
+        margin-top: 20px;
+        width: 100px;
+        border: 1px solid #454bb5;
+        border-radius: 5px;
+        background-color: white;
+        color:#454bb5;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .filter-buttons button:hover {
+        background-color: #e6f7ff;
+    }
+    .filter-buttons button.active-filter {
+        background-color:#454bb5;
+        color: white;
+    }
+    #showBtn{
+        font-size: 13px;
+       
+    }
+    #showActiveBtn{
+        font-size: 13px;
+    }
+    #showCompletedBtn{
+        font-size: 13px;
+    }
+
 @media screen and (min-width: 768px){
     .container{
  max-width: 700px;
