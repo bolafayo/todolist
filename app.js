@@ -82,16 +82,17 @@ const updatestats =() =>{
 const updateTasklist =()=>{
     const taskList = document.getElementById('task-list')
     taskList.innerHTML =''
-    const shouldDisplay =
-            (currentFilter === 'all') ||                       
-            (currentFilter === 'active' && !task.completed) || 
+
+    
+       
+    tasks.forEach((task , index) =>{
+         const shouldDisplay =
+            (currentFilter === 'all') ||
+            (currentFilter === 'active' && !task.completed) ||
             (currentFilter === 'completed' && task.completed);
 
-             if (shouldDisplay) {
-            const listItem = document.createElement('li'); 
-            }
+             if (!shouldDisplay) return;
 
-    tasks.forEach((task , index) =>{
 
         const listItem = document.createElement('li')
 
@@ -117,20 +118,24 @@ taskList.append(listItem);
 document.getElementById('newTask').addEventListener('click', function(e){
     e.preventDefault()
 
-  
-     updateTasklist();
+    addTask();
      
 })
 document.getElementById('showBtn').addEventListener('click',  () => {
-     updateTasklist();
-      currentFilter = 'all';
+     currentFilter = 'all';
+    updateTasklist();
+    updateFilterButtons();
 })
-document.getElementById('showBtn').addEventListener('click',  () => {
-     updateTasklist();
+document.getElementById('showActiveBtn').addEventListener('click',  () => {
+      currentFilter = 'active';
+    updateTasklist();
+    updateFilterButtons();
+    
+})
+document.getElementById('showCompletedBtn').addEventListener('click',  () => {
      currentFilter = 'completed';
-})
-document.getElementById('showBtn').addEventListener('click',  () => {
-     updateTasklist();
+    updateTasklist();
+    updateFilterButtons();
 })
 
 
