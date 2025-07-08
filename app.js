@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         storedTasks.forEach((tasks)=> tasks.push)
         updateTasklist()
         updatestats()
+         updateFilterButtons();
     }
 })
 let tasks =[] 
+let currentFilter = 'all';
 
 const saveTasks =()=>{
     localStorage.setItem('tasks',JSON.stringify(tasks))
@@ -28,16 +30,16 @@ if (text) {
 };
 
 const updateFilterButtons = () => {
-    const allBtn = document.getElementById('showAllBtn');
+    const allBtn = document.getElementById('showABtn');
     const activeBtn = document.getElementById('showActiveBtn');
     const completedBtn = document.getElementById('showCompletedBtn');
 
-    // Remove 'active-filter' class from all buttons first
+   
     if (allBtn) allBtn.classList.remove('active-filter');
     if (activeBtn) activeBtn.classList.remove('active-filter');
     if (completedBtn) completedBtn.classList.remove('active-filter');
 
-    // Add 'active-filter' class to the currently selected filter button
+  
     if (currentFilter === 'all' && allBtn) {
         allBtn.classList.add('active-filter');
     } else if (currentFilter === 'active' && activeBtn) {
@@ -80,8 +82,13 @@ const updatestats =() =>{
 const updateTasklist =()=>{
     const taskList = document.getElementById('task-list')
     taskList.innerHTML =''
+    const shouldDisplay =
+            (currentFilter === 'all') ||                       
+            (currentFilter === 'active' && !task.completed) || 
+            (currentFilter === 'completed' && task.completed);
 
     tasks.forEach((task , index) =>{
+
         const listItem = document.createElement('li')
 
         listItem.innerHTML = `
@@ -100,6 +107,7 @@ const updateTasklist =()=>{
 listItem.addEventListener('change', ()=> ToggleTestComplete(index))
 taskList.append(listItem);
     });
+   
 }
    
 document.getElementById('newTask').addEventListener('click', function(e){
