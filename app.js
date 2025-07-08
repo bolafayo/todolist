@@ -26,6 +26,27 @@ if (text) {
     saveTasks()
 }
 };
+
+const updateFilterButtons = () => {
+    const allBtn = document.getElementById('showAllBtn');
+    const activeBtn = document.getElementById('showActiveBtn');
+    const completedBtn = document.getElementById('showCompletedBtn');
+
+    // Remove 'active-filter' class from all buttons first
+    if (allBtn) allBtn.classList.remove('active-filter');
+    if (activeBtn) activeBtn.classList.remove('active-filter');
+    if (completedBtn) completedBtn.classList.remove('active-filter');
+
+    // Add 'active-filter' class to the currently selected filter button
+    if (currentFilter === 'all' && allBtn) {
+        allBtn.classList.add('active-filter');
+    } else if (currentFilter === 'active' && activeBtn) {
+        activeBtn.classList.add('active-filter');
+    } else if (currentFilter === 'completed' && completedBtn) {
+        completedBtn.classList.add('active-filter');
+    }
+};
+
 const ToggleTestComplete=(index)=>{
     tasks[index].completed= !tasks[index].completed;
     updateTasklist()
