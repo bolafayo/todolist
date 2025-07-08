@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         updatestats()
     }
 })
-
-
-
 let tasks =[] 
 
 const saveTasks =()=>{
@@ -18,7 +15,6 @@ const saveTasks =()=>{
 }
 
 const addTask =()=>{
-
 const taskInput = document.getElementById('taskInput')
 const text = taskInput.value.trim();
 
@@ -29,21 +25,18 @@ if (text) {
     updatestats()
     saveTasks()
 }
-
 };
 const ToggleTestComplete=(index)=>{
     tasks[index].completed= !tasks[index].completed;
     updateTasklist()
     updatestats()
     saveTasks()
-    
 }
 const deleteTask =(index)=>{
     tasks.splice(index, 1)
     updateTasklist()
     updatestats()
      saveTasks()
-
 }
 const editTask =(index)=> {
     const taskInput = document.getElementById('taskInput')
@@ -63,9 +56,6 @@ const updatestats =() =>{
 
     document.getElementById('number').innerText=`${completeTasks} /${totalTasks}`
 }
-
-
-
 const updateTasklist =()=>{
     const taskList = document.getElementById('task-list')
     taskList.innerHTML =''
