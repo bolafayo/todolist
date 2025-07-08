@@ -229,11 +229,32 @@ font-size: 20px;
     width: 80%;
     padding: 20px;
 }
+.filter-buttons {
+    border: 1px solid;
+        margin: 35px;
+          width: 110px;
+       
+    }
+ .filter-buttons button {
+        margin-top: 20px;
+        width: 110px;
+    }
+    #showBtn{
+        font-size: 18px;
+       
+    }
+    #showActiveBtn{
+        font-size: 18px;
+    }
+    #showCompletedBtn{
+        font-size: 16px;
+    }
+
 
 }
  @media screen and (min-width: 992px){
       .container{
- max-width: 1200px;
+ max-width: 800px;
  margin: 100px auto 0 auto; 
 }
 .details h1{
@@ -282,7 +303,7 @@ font-size: 20px;
     margin-left: 30px;
 }
 .filter-buttons {
-        margin: 25px;
+        margin: 55px;
        
     }
  .filter-buttons button {
