@@ -87,6 +87,10 @@ const updateTasklist =()=>{
             (currentFilter === 'active' && !task.completed) || 
             (currentFilter === 'completed' && task.completed);
 
+             if (shouldDisplay) {
+            const listItem = document.createElement('li'); 
+            }
+
     tasks.forEach((task , index) =>{
 
         const listItem = document.createElement('li')
@@ -113,5 +117,22 @@ taskList.append(listItem);
 document.getElementById('newTask').addEventListener('click', function(e){
     e.preventDefault()
 
-    addTask()
+  
+     updateTasklist();
+     
 })
+document.getElementById('showBtn').addEventListener('click',  () => {
+     updateTasklist();
+      currentFilter = 'all';
+})
+document.getElementById('showBtn').addEventListener('click',  () => {
+     updateTasklist();
+     currentFilter = 'completed';
+})
+document.getElementById('showBtn').addEventListener('click',  () => {
+     updateTasklist();
+})
+
+
+
+
