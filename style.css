@@ -149,6 +149,7 @@ list-style: none;
        
     }
     .filter-buttons button {
+        margin: 5px;
         margin-top: 20px;
         width: 100px;
         border: 1px solid #454bb5;
@@ -238,6 +239,7 @@ font-size: 20px;
  .filter-buttons button {
         margin-top: 20px;
         width: 110px;
+       
     }
     #showBtn{
         font-size: 18px;
@@ -253,6 +255,7 @@ font-size: 20px;
 
 }
  @media screen and (min-width: 992px){
+  
       .container{
  max-width: 800px;
  margin: 100px auto 0 auto; 
@@ -303,15 +306,27 @@ font-size: 20px;
     margin-left: 30px;
 }
 .filter-buttons {
-        margin: 55px;
+   
+        margin: 100px;
+      
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+     align-items: center;
+       gap: 170px;
+       padding: 0 220px;
+     margin-top: 20px;
+        text-align: center;
+       
        
     }
  .filter-buttons button {
-        margin-top: 20px;
-        width: 150px;
+        margin-top: 30px;
+        width: 100px;
     }
     #showBtn{
+      
         font-size: 16px;
+       
        
     }
     #showActiveBtn{
