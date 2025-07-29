@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-container">
+            <div class="details">
+                <h1>Todo App</h1>
+                <p>Keep it up!</p>
+                <div id="progressBar">
+                    <div id="progress">
+                     
+                    </div>
+                </div>
+            </div>
+             <div class="start-number">
+            <p id="number">0/0</p>
+         </div>
+              </div>
+          
+        </div>
+        <div class="filter-buttons">
+    <button id="showBtn">All Tasks </button>
+    <button id="showActiveBtn">Active Tasks</button>
+    <button id="showCompletedBtn">Completed Tasks</button>
+</div>
+         <form action="">
+            <input type="text" id="taskInput" placeholder="Write your task">
+            <button id="newTask" type="submit">+</button>
+         </form>
+        
+       <ul id="task-list">
+       </ul>
+    <script src="./app.js"></script>
+</body>
+</html>
