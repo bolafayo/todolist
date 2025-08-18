@@ -3,6 +3,7 @@
 
 A minimal, interactive productivity tool that helps users create, track, and manage tasks with ease.  
 This project was built using **HTML, CSS, and Vanilla JavaScript** to strengthen skills in DOM manipulation, event handling, and state management.
+
 ---
 
 ##**Author**
@@ -28,8 +29,8 @@ https://todolist-five-xi-20.vercel.app/
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**
+- 
   ---
-  
 ###**Getting Started**
 
 -**Installation**
