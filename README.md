@@ -26,7 +26,7 @@ https://todolist-five-xi-20.vercel.app/
   
 ###Getting Started
 
-Installation
+-**Installation**
 
 Fork the repository
 
@@ -41,19 +41,19 @@ cd todolist
 
 ###Contributing
 
-Contributions are always welcome!
+-Contributions are always welcome!
 
-Want to contribute? Here’s how:
+-Want to contribute? Here’s how:
 
-Fork the repository
+-Fork the repository
 
-Create a new branch (git checkout -b feature-name)
+-Create a new branch (git checkout -b feature-name)
 
-Commit your changes (git commit -m "Add feature")
+-Commit your changes (git commit -m "Add feature")
 
-Push to the branch (git push origin feature-name)
+-Push to the branch (git push origin feature-name)
 
-Open a Pull Request
+-Open a Pull Request
 
 ##License
 
