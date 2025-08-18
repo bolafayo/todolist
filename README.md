@@ -1,20 +1,20 @@
 #Todo List App
-
 ---
+
 A minimal, interactive productivity tool that helps users create, track, and manage tasks with ease.  
 This project was built using **HTML, CSS, and Vanilla JavaScript** to strengthen skills in DOM manipulation, event handling, and state management.
-
 ---
+
 ##**Author**
 
 https://www.github.com/https://github.com/bolafayo
 
  👉 **todolist Website Demo**
- 
  ---
 
 https://todolist-five-xi-20.vercel.app/
 ---
+
 ##**Features**
 
 - **Add, complete, and delete tasks**  
@@ -28,8 +28,8 @@ https://todolist-five-xi-20.vercel.app/
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**
-  
   ---
+  
 ###**Getting Started**
 
 -**Installation**
@@ -60,7 +60,6 @@ cd todolist
 -Open a Pull Request
 
 ---
-
 ##License
 
 -This project is licensed under the MIT License
