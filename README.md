@@ -28,6 +28,7 @@ https://todolist-five-xi-20.vercel.app/
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**
+  
   ---
 ###**Getting Started**
 
@@ -41,9 +42,7 @@ Clone your forked repo
 
 git clone https://github.com/your-username/todolist.git
 cd todolist
-
 ```
-
 ###**Contributing**
 
 -Contributions are always welcome!
